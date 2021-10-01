@@ -169,3 +169,4 @@ const reverseStr = (str) => {
     let reverseListOfChars = listOfChars.reverse();
     let reversedStr = reverseListOfChars.join("");
     return reversedStr;
+};
