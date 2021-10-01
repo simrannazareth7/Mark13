@@ -1,58 +1,99 @@
-:root{
-    --primary-color :#819eb1;
-    --secondary-color:#63c9c4;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-body{
-    margin: 0;
-    background-color: var(--primary-color);
+:root {
+  --primary-color: #71c9ce;
+  --secondary-color: #e3fdfd;
+  --tertary-color: #a6e3e9;
 }
 
-.birthday{
-    padding: 5rem;
-    margin: auto;
-    text-align: center;
-    width: 60%;
-    font-size: 1.2rem;
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--secondary-color);
+  background-image: url("https://www.transparenttextures.com/patterns/back-pattern.png");
+  font-family: "Montserrat", sans-serif;
 }
 
-#date-of-birth{
-    display: block;
-    margin: auto;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-    width: 300px;
-    height: 7vh;
-    border-radius: 10px;
-    outline: none;
-    border: 2px solid var(--secondary-color);
+header {
+  text-align: center;
+  background-color: var(--primary-color);
 }
 
-#lucky-number{
-    display: block;
-    margin: auto;
-    margin-top: 0.5rem;
-    margin-bottom: 1.5rem;
-    width: 300px;
-    height: 7vh;
-    border-radius: 10px;
-    outline: none;
-    border: 2px solid var(--secondary-color);
+.div--header {
+  padding: 1rem 0;
+  font-size: 2.2rem;
 }
 
-#btn-check-number{
-    width: 175px;
-    height: 7vh;
-    font-weight:400;
-    font-size: 1.1rem;
-    border-radius: 12px;
-    cursor: pointer;
-    border: 2px solid var(--secondary-color);
-    background-color: hsla(113, 4%, 60%, 0.938);
+.div--input {
+  display: block;
+  margin-top: 3rem;
+  font-size: 1.5rem;
 }
 
-.input-label{
-    font-size: 1.1rem;
-    font-weight: bold;
+#input--dob,
+#input--number {
+  padding-left: 0.5rem;
+  margin-top: 1rem;
+  /* min-width: 30%; */
+  width: min(50%, 25rem);
+  height: 3rem;
+  border-radius: 5px;
+}
+
+.div--contents {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+#btn--check {
+  padding: 1em;
+  background: var(--primary-color);
+  margin: 1rem 0;
+  min-width: 20%;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+#btn--check:hover {
+  background-color: var(--tertary-color);
+  transition: background-color 0.5s;
+}
+
+#error--msg {
+  display: none;
+  font-size: 1rem;
+}
+
+/* footer style */
+footer {
+  margin-top: auto;
+  display: block;
+  width: 100%;
+  background-color: var(--primary-color);
+  bottom: 0;
+}
+
+.footer--heading {
+  padding: 0.5em;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  height: 1.5rem;
+}
+
+.footer--logo {
+  margin: 0.7rem 1.5rem;
 }

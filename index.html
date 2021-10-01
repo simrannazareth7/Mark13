@@ -1,26 +1,45 @@
-<!DOCTYPE html>
+\<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palindrome</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Palindrome Birthday?</title>
 </head>
 <body>
-    <div class="birthday">
-
-        <h1>Is your Birthday palindrome</h1>
-
-        <label for="date-of-birth" class="input-label">Date of Birth:</label>
-        <input type="date" id="date-of-birth" placeholder="dd-mm-yy">
-
-        <button id="btn-check-number">Check Number</button>
-
-        <p id="output-box"></p>
-
-    </div>
-
-    <script src="app.js" type="text/javascript"></script>
+    <main class="container">
+        <header>
+					<div class="div--header">
+            <span>Palindrome Birthday</span>
+					</div>
+        </header>
+				<div class="div--contents">
+					<div class = "div--input">
+						<p>Date of Birth</p>
+						<input id = "input--dob" type = "date" >
+					</div>
+					<button id="btn--check">Check</button>
+					<p id="error--msg"></p>
+				</div>
+    </main>
+    <footer>
+        <div class = "footer--heading">
+                <p>Connect with me on !</p>
+        </div>
+        <div class = "footer--container" >
+                <div class="row">
+                       
+                        <a class="footer--logo" href="https://www.linkedin.com/in/simran-nazareth-52b33518b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BBWWFP3FCS162X45AdGt%2Ftg%3D%3D" target="blank">
+                                <img title="pratikbagmare" src="images/linkedin.png" alt="linkedin" >
+                        </a>
+                        <a class="footer--logo" href="https://www.github.com/simrannazareth7" target="blank">
+                                <img title="pratikb0501" src="images/github.png" alt="github" >
+                        </a>
+                        
+                </div>
+        </div>
+</footer>
+    <script src="app.js"></script>
 </body>
 </html>
